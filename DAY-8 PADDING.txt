@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADDING</title>
+    <style>
+        h1{background-color:cyan;color:red;text-align:center;border-style: dashed;}
+        h2 {color:rgb(237, 92, 52);}
+        h3 {color:rgb(7, 248, 39);text-decoration:underline;}
+        #output {text-align:center;font-size:25px;color:blue;text-decoration:underline;}
+
+
+        div {border: 1px solid black;padding-top: 100px;padding-bottom: 100px;padding-right: 150px;padding-left: 80px;background-color: lightblue;}
+
+        
+        /* One value */
+        p.onepadding {padding: 25px;border: 1px solid black;background-color: lightblue;}
+        /* Two values */
+        p.twopadding {padding: 25px 50px;border: 1px solid black;background-color: lightblue;}
+        /* Three values */
+        p.threepadding {padding: 25px 50px 75px;border: 1px solid black;background-color: lightblue;}
+        /* Four values */
+        p.fourpadding {padding: 25px 50px 75px 100px;border: 1px solid black;background-color: lightblue;}
+    </style>
+</head>
+<body>
+    <p><h1><u>PADDING</u></h1></p>
+    <p>---> The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+    <p>---> With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left)</p>
+    <p>---> CSS has properties for specifying the padding for each side of an element: <br><br>
+
+        . padding-top<br>
+        . padding-right<br>
+        . padding-bottom<br>
+        . padding-left<br></p>
+        <h3>EXAMPLE : 1 </h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        div {<br>
+            border: 1px solid black;<br>
+            padding-top: 100px;<br>
+            padding-bottom: 100px;<br>
+            padding-right: 150px;<br>
+            padding-left: 80px;<br>
+            background-color: lightblue;<br>
+          }<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt div &gt This div element has a top padding of 100px, a right padding of 150px, a bottom padding of 100px, and a left padding of 80px. &lt /div &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p><br><hr>
+        <div>This div element has a top padding of 100px, a right padding of 150px, a bottom padding of 100px, and a left padding of 80px.</div><hr>
+
+        <h2><u><font color="red">padding - Shorthand Property</font></u></h2>
+        <p> So, here is how it works for shorthand margin: <br><br>
+                
+            If the border-style property has one value:<br><br>
+            ---> border-style: dotted;<br>
+            . all four borders are dotted<br><br>
+
+            If the border-style property has two values:<br><br>
+            ---> border-style: dotted solid;<br>
+            . top and bottom borders are dotted<br>
+            . right and left borders are solid<br><br>
+
+            If the border-style property has three values:<br><br>
+            ---> border-style: dotted solid double;<br>
+            . top border is dotted<br>
+            . right and left borders are solid<br>
+            . bottom border is double<br><br>
+
+            If the border-style property has four values:<br><br>
+            ---> border-style: dotted solid double dashed;<br>
+            . top border is dotted<br>
+            . right border is solid<br>
+            . bottom border is double<br>
+            . left border is dashed<br><br></p>
+            <h3>EXAMPLE : 2 </h3>
+            &lt html &gt<br>
+            &lt head &gt<br>
+            &lt style &gt<br><br>
+            /* One value */<br>
+            p.onepadding {padding: 25px;border: 1px solid black;background-color: lightblue;}<br>
+            /* Two values */<br>
+            p.twopadding {padding: 25px 50px;border: 1px solid black;background-color: lightblue;}<br>
+            /* Three values */<br>
+            p.threepadding {padding: 25px 50px 75px;border: 1px solid black;background-color: lightblue;}<br>
+            /* Four values */<br>
+            p.fourpadding {padding: 25px 50px 75px 100px;border: 1px solid black;background-color: lightblue;}<br><br>
+            &lt /style &gt<br>
+            &lt /head &gt<br>
+            &lt body &gt<br><br>
+            &lt div &gt To shorten the code, it is possible to specify all the padding properties in one property. &lt /div &gt<br><br>
+            &lt /body &gt<br>
+            &lt /head &gt<br>
+            &lt /html &gt<br>
+
+            <p id="output">OUTPUT</p><br><hr>
+            <p class="onepadding">This p element has a top, bottom, left, and right padding of 25px.</p><hr>
+            <p class="twopadding">This p element has a top and bottom padding of 25px, and a right and left padding of 50px.</p><hr>
+            <p class="threepadding">This p element has a top padding of 25px, a right and left padding of 50px, and a bottom padding of 75px.</p><hr>
+            <p class="fourpadding">This p element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.</p><hr>
